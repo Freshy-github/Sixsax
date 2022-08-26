@@ -1,0 +1,12 @@
+local speaker = game.Players.LocalPlayer
+local pchar = speaker.Character
+
+local float = nil
+
+if pchar:FindFirstChild("floater") then
+float = pchar:FindFirstChild("floater")
+end
+
+if float ~= nil then
+float:Destroy()
+end
