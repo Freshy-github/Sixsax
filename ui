@@ -1080,10 +1080,8 @@ function Library.Main(Text,keycode)
 					RealValue = (((pos.X.Scale * max) / max) * (max - min) + min)
 					value = (precise and string.format("%.1f", tostring(RealValue))) or (math.floor(RealValue))
 					TextLabel.Text = tostring(value)
-                    if tostring(value) == math.ceil(tostring(value)) then
 					callback(value)
-                    end
-                    wait(.5)
+                    wait(.8)
 				end
 
 				Slider.InputBegan:Connect(function(Pressed)
